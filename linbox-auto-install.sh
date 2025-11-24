@@ -37,7 +37,7 @@ function bzdecompress {
 
 
 #switches
-STABLE_VAR="true"
+STABLE_VAR="false"
 DEBUG=""
 DEBUG_VAR=""
 WARNINGS=""
@@ -46,8 +46,8 @@ OPTIM="--enable-optimization"
 OPTIM_VAR=""
 CHECK_VAR=""
 #options
-PREFIX_LOC="./build"
-PREFIX_VAR=""
+PREFIX_LOC="$(pwd)/build"
+PREFIX_VAR="-framework Accelerate"
 PREFIX="--prefix=$PREFIX_LOC"
 BLAS=""
 BLAS_VAR="false"
